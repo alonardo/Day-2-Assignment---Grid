@@ -1,0 +1,102 @@
+:root{
+    --orange:#EDAE49;
+    --red: #D1495B;
+    --blue: #00798C;
+}
+
+body{
+    color:var(--orange)
+}
+
+main{
+    background-color: var(--blue);
+    min-height:90vh;
+}
+
+footer, nav{
+    padding: 10px;
+    background-color: var(--red);
+}
+
+nav{
+    border-bottom: 5px solid green;
+}
+
+footer{
+    border-top: 5px solid green;
+    text-align: center;
+}
+
+h1{
+    margin: 0px;
+    padding: 25px 50px;
+    text-shadow: 5px 5px var(--red);
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    opacity: .7;
+    border-radius: 20%;
+    float:left;
+    margin-right: 15px;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+article{
+    float: left;
+    height: 200px;
+    width: 300px;
+    background-color: var(--red);
+    margin: 50px;
+    box-shadow: 5px 5px var(--orange);
+    padding-top: 100px;
+    transform: rotate(.05turn);
+}
+
+article:hover{
+    transform: none;
+}
+
+h4{
+    color:green;
+    height: 100px;
+    margin-right: 10px;
+    text-align: justify;
+
+}
+
+nav > a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px 0px;
+    background-color: skyblue;
+    border: 1px solid yellow;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin: 10x;
+}
+
+nav > a:hover{
+    background-color: red;
+    color:black;
+}
+
+a[href="#"] {
+    text-decoration: red wavy underline;
+}
+
+header:hover + main article{
+    opacity: .1;
+}
+
+header:hover + main article>*{
+    display:none;
+}
+
+
